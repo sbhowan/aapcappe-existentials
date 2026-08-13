@@ -4,7 +4,7 @@ Creates one summary-table CSV from the token-level existential dataset.
 
 Input:
     The CSV created by count_existentials.py 
-    (default: aapcappe_existentials.csv)
+    (default: aapcappe_existential_features.csv)
 
 Output:
     One long-format summary table with:
@@ -25,7 +25,7 @@ The table summarizes:
     manual_review
 
 Usage:
-    python summarize_existentials.py aapcappe_existentials.csv
+    python summarize_existentials.py aapcappe_existential_features.csv
 """
 
 from __future__ import annotations
