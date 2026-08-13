@@ -4,7 +4,7 @@ Filters an Excel workbook by italic formatting and exports the kept rows to
 CSV for analysis of output of AAPCAppE text search.
 
 Usage:
-    python filter_italics.py aapcappe_output.xlsx aapcappe_speakers.csv
+    python filter_italics.py aapcappe_raw_output.xlsx aapcappe_speakers_only.csv
 
 Requires:
     python -m pip install --upgrade openpyxl
