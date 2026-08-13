@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Creates a CSV of Appalachian English existentials from speaker data in 
-aapcappe_speakers.csv for use in a logistic regression.
+aapcappe_speakers_only.csv for use in a logistic regression.
 
 The output contains one row per detected token, preserves the original 
 speaker-data columns, and adds predictors.
@@ -29,7 +29,7 @@ Usages covered:
     it was people
 
 Usage (for a headerless CSV):
-    python count_existentials.py aapcappe_speakers.csv
+    python count_existentials.py aapcappe_speakers_only.csv
 """
 
 from __future__ import annotations
@@ -87,8 +87,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output_csv", 
         type=Path,
-        default="aapcappe_existentials.csv", 
-        help="Path to the output file (default: aapcappe_existentials.csv)"
+        default="aapcappe_existential_features.csv", 
+        help="Path to the output file (default: aapcappe_existential_features.csv)"
     )
     parser.add_argument(
         "--speaker-column",
